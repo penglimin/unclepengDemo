@@ -24,6 +24,8 @@
 		A7BFEC671EA87AC1003E3EB1 /* LPPingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEC611EA87AC1003E3EB1 /* LPPingViewController.m */; };
 		A7BFEC681EA87AC1003E3EB1 /* STDebugFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEC631EA87AC1003E3EB1 /* STDebugFoundation.m */; };
 		A7BFEC691EA87AC1003E3EB1 /* STDPingServices.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEC651EA87AC1003E3EB1 /* STDPingServices.m */; };
+		A7BFEC711EA8838C003E3EB1 /* LPWebBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEC701EA8838C003E3EB1 /* LPWebBlogViewController.m */; };
+		A7BFEC741EA886FE003E3EB1 /* LPBlogController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7BFEC731EA886FE003E3EB1 /* LPBlogController.m */; };
 		A7DA733B1EA8558F00F7A55B /* LPPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DA733A1EA8558F00F7A55B /* LPPublishViewController.m */; };
 		A7DA733E1EA8559C00F7A55B /* LPTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7DA733D1EA8559C00F7A55B /* LPTestViewController.m */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,10 @@
 		A7BFEC631EA87AC1003E3EB1 /* STDebugFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDebugFoundation.m; sourceTree = "<group>"; };
 		A7BFEC641EA87AC1003E3EB1 /* STDPingServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STDPingServices.h; sourceTree = "<group>"; };
 		A7BFEC651EA87AC1003E3EB1 /* STDPingServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STDPingServices.m; sourceTree = "<group>"; };
+		A7BFEC6F1EA8838C003E3EB1 /* LPWebBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPWebBlogViewController.h; sourceTree = "<group>"; };
+		A7BFEC701EA8838C003E3EB1 /* LPWebBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPWebBlogViewController.m; sourceTree = "<group>"; };
+		A7BFEC721EA886FE003E3EB1 /* LPBlogController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPBlogController.h; sourceTree = "<group>"; };
+		A7BFEC731EA886FE003E3EB1 /* LPBlogController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPBlogController.m; sourceTree = "<group>"; };
 		A7DA73391EA8558F00F7A55B /* LPPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPPublishViewController.h; sourceTree = "<group>"; };
 		A7DA733A1EA8558F00F7A55B /* LPPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPPublishViewController.m; sourceTree = "<group>"; };
 		A7DA733C1EA8559C00F7A55B /* LPTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPTestViewController.h; sourceTree = "<group>"; };
@@ -133,6 +139,7 @@
 		A78F00E41EA8538E002342E1 /* LPDemoSet */ = {
 			isa = PBXGroup;
 			children = (
+				A7BFEC6E1EA8838C003E3EB1 /* web页面 */,
 				A7BFEC531EA864F1003E3EB1 /* 获取当前所连接Wifi的网关地址 */,
 				A7BFEC411EA85E77003E3EB1 /* 获取WiFi信息 */,
 				A7BFEC451EA85E77003E3EB1 /* Ping */,
@@ -223,6 +230,17 @@
 				A7BFEC5F1EA87AC1003E3EB1 /* STSimplePing.m */,
 			);
 			path = PingTester;
+			sourceTree = "<group>";
+		};
+		A7BFEC6E1EA8838C003E3EB1 /* web页面 */ = {
+			isa = PBXGroup;
+			children = (
+				A7BFEC6F1EA8838C003E3EB1 /* LPWebBlogViewController.h */,
+				A7BFEC701EA8838C003E3EB1 /* LPWebBlogViewController.m */,
+				A7BFEC721EA886FE003E3EB1 /* LPBlogController.h */,
+				A7BFEC731EA886FE003E3EB1 /* LPBlogController.m */,
+			);
+			path = "web页面";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +391,8 @@
 				A7DA733E1EA8559C00F7A55B /* LPTestViewController.m in Sources */,
 				A7BFEC491EA85E77003E3EB1 /* LPWIFIInfoViewController.m in Sources */,
 				A7BFEC681EA87AC1003E3EB1 /* STDebugFoundation.m in Sources */,
+				A7BFEC711EA8838C003E3EB1 /* LPWebBlogViewController.m in Sources */,
+				A7BFEC741EA886FE003E3EB1 /* LPBlogController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

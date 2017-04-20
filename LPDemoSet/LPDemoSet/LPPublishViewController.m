@@ -10,6 +10,7 @@
 #import "LPPingViewController.h"
 #import "LPWIFIInfoViewController.h"
 #import "LPWifiGateWayViewController.h"
+#import "LPWebBlogViewController.h"
 
 @interface LPPublishViewController ()<UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -31,7 +32,8 @@
     self.dataArray = @[
                        @"Ping域名、Ping某IP",
                        @"获取WIFI信息",
-                       @"获取WIFI网关信息"
+                       @"获取WIFI网关信息",
+                       @"博客系列--web页面"
                        ];
     self.tableView = [[UITableView alloc] initWithFrame:self.view.frame];
     self.tableView.delegate = self;
@@ -80,7 +82,13 @@
             [self.navigationController pushViewController: wifiVc animated:YES];
             break;
         }
-
+        case 3:
+        {
+            LPWebBlogViewController *blogVc = [[LPWebBlogViewController alloc] init];
+            [self.navigationController pushViewController: blogVc animated:YES];
+            break;
+        }
+            
         default:
             break;
     }
