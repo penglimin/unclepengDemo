@@ -3,7 +3,7 @@
 //  LPDemoSet
 //
 //  Created by SIYIN on 17/4/20.
-//  Copyright © 2017年 杨湘慧. All rights reserved.
+//  Copyright © 2017年 彭利民. All rights reserved.
 //
 
 #import "LPWifiGateWayViewController.h"
